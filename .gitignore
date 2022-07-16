@@ -1,0 +1,8 @@
+# Local Netlify folder
+.netlify
+
+node_modules
+
+# Compiled sass
+*.css
+*.css.map
