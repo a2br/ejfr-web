@@ -120,6 +120,10 @@ header {
 		& > span.ej-bold {
 			font-weight: bold;
 		}
+		.ej-short {
+			font-weight: bold;
+			display: none;
+		}
 	}
 }
 
@@ -152,6 +156,31 @@ main {
 			}
 			&.linkedin-link {
 				color: #0b66c2;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		margin: 20px;
+
+		header > span {
+			line-height: 90%;
+			.ej-bold {
+				display: none;
+			}
+			.ej-short {
+				display: inline !important;
+			}
+		}
+
+		main {
+			h1 {
+				font-size: 3em;
+			}
+			p {
+				font-size: 1.5em;
 			}
 		}
 	}
